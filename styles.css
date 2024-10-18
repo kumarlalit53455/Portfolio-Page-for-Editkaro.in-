@@ -1,0 +1,131 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Hero section */
+.category-hero {
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    font-size: 4vw;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 2vw;
+}
+
+/* Portfolio grid */
+#portfolio-category {
+    padding: 40px 20px;
+}
+
+#portfolio-category h2 {
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+.video-thumb {
+    position: relative;
+}
+
+.video-thumb img {
+    width: 100%;
+    display: block;
+    height: 200px;
+    object-fit: cover;
+}
+
+.video-thumb h3 {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: 90%;
+    }
+}
+
+@media (min-width: 769px) {
+    .portfolio-item {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .portfolio-item {
+        width: 30%;
+    }
+}
